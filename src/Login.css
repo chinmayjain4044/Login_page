@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
 .login-page {
     display: flex;
     flex-direction: column;
@@ -47,10 +53,23 @@
     clip-path: polygon(17% 13%, 100% 11%, 100% 77%, 90% 87%, 75% 93%, 31% 93%, 0 93%, 0 32%, 7% 20%);
     object-fit: cover; 
     border-radius: 8px;
-
-
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
+.left-section img.active {
+    opacity: 1;
+}
+.left-section img.fade-in {
+    opacity: 1;
+    transition-delay: 0s; /* Ensure immediate fade-in */
+  }
+  
+  .left-section img.fade-out {
+    opacity: 0;
+    transition-delay: 0.2s; /* Delay fade-out slightly to avoid overlap */
+  }
+  
 .left-section h2 {
     font-size: 24px;
     margin-top: 20px;
@@ -74,6 +93,7 @@
     height: 12px;
     border-radius: 6px;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 .dot.active {
