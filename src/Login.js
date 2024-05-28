@@ -6,7 +6,7 @@ import thirdImage from './assets/thirdImage.png';
 import fourthImage from './assets/fourthImage.jpeg';
 
 function Login() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(1);
   const images = [welcomeImage, secondImage, thirdImage,fourthImage]; 
 
   const handleDotClick = (index) => {

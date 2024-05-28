@@ -60,16 +60,7 @@ body {
 .left-section img.active {
     opacity: 1;
 }
-.left-section img.fade-in {
-    opacity: 1;
-    transition-delay: 0s; /* Ensure immediate fade-in */
-  }
-  
-  .left-section img.fade-out {
-    opacity: 0;
-    transition-delay: 0.2s; /* Delay fade-out slightly to avoid overlap */
-  }
-  
+
 .left-section h2 {
     font-size: 24px;
     margin-top: 20px;
